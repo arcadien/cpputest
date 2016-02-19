@@ -234,7 +234,7 @@ void* (*PlatformSpecificMemset)(void*, int, size_t) = memset;
 
 static int IsNanImplementation(double d)
 {
-    return isnan((float)d);
+    return isnan(d);
 }
 
 double (*PlatformSpecificFabs)(double) = fabs;
